@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8ba4c332ae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
+            </nav>
+            <div class="header-text">
+                <p>Web Engineer</p>
+                <h1>Hi, I am <br> Muhammad <span>Bilal</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/front.jpeg" alt="Front">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate Web Engineering student skilled in Java, C++, Haskell, C#, HTML, and CSS, dedicated to building efficient web solutions. With hands-on internship experience, I’ve honed my technical and collaborative skills, and I’m eager to contribute to impactful tech projects.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Application Interface</li>
+                            <li><span>Java</span><br>Building an Application</li>
+                            <li><span>CSS/HTML</span><br>Website Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>Project at Codsoft</li>
+                            <li><span>C++</span><br>Building an Application at Codsoft</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2020-2022</span><br>ICS From Reader</li>
+                            <li><span>2022-current</span><br>BS-SE From Fast</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>I developed a Java-based application capable of bidirectional text conversion between Arabic, Urdu, and Persian languages. The tool seamlessly translates text across these languages, ensuring accurate and efficient communication.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="project">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I designed and developed a professional portfolio website using HTML, CSS, and JavaScript, showcasing my skills and projects. The website is deployed on GitHub Pages for easy access and sharing.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/appjpeg.jpeg" alt="Arabic Dictionary">
+                    <div class="Layer">
+                        <h3>Arabic Dictionary</h3>
+                        <p>Imagine breaking language barriers effortlessly! I developed a Java-based application that seamlessly converts text between Arabic, Urdu, and Persian, enabling smooth and accurate multilingual communication.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/port.PNG" alt="Portfolio">
+                    <div class="Layer">
+                        <h3>Portfolio</h3>
+                        <p>Step into my digital world! I designed and built a sleek, professional portfolio website using HTML, CSS, and JavaScript, showcasing my skills and projects. Deployed on GitHub Pages, it’s a testament to my passion for clean, functional, and accessible web design.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>bilalyou8334@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Muhammad-Bilal-00"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/bilaloffical_00/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/cv.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                        <input type="hidden" name="access_key" value="014dc03f-0252-49bc-8c34-66d7b6a2f6ad">
+                    
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Enter Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Bilal</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Tab functionality
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-links");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        // Menu functionality
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+        // Close menu when a link is clicked
+        var menuLinks = document.querySelectorAll("#sidemenu a");
+        menuLinks.forEach(function(link) {
+            link.addEventListener("click", closemenu);
+        });
+    </script>
+
+ 
+</body>
+</html>
